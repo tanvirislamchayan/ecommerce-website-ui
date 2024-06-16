@@ -799,3 +799,31 @@ header.sticky .logo {
 .heading p span {
     color: #faaf24;
 }
+
+.news-email {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.news-email input {
+    background-color: white;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 22px;
+    width: 500px;
+    margin-top: 75px;
+}
+
+.news-email button {
+    background-color: #14ff72cb;
+    padding: 10px 35px;
+    bor
+}
+
+.footer-main {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+}
