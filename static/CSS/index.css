@@ -801,9 +801,7 @@ header.sticky .logo {
 }
 
 .news-email {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
+    margin-top: 100px;
 }
 
 .news-email input {
@@ -812,14 +810,25 @@ header.sticky .logo {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 22px;
-    width: 500px;
-    margin-top: 75px;
+    margin: 0 auto;
+    padding: 13px;
 }
 
 .news-email button {
     background-color: #14ff72cb;
-    padding: 10px 35px;
-    bor
+    padding: 13px 35px;
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 22px;
+    margin: 0 auto;
+    transform: translateX(-5px);
+    transition: all .3s;
+}
+
+.news-email button:hover {
+    background-color: black;
+    color:#fff;
 }
 
 .footer-main {
