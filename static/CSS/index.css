@@ -835,11 +835,6 @@ header.sticky .logo {
     color:#fff;
 }
 
-.footer-main {
-    height: 50vh;
-    width: 100%;
-    background-color: black;
-}
 
 @media screen and (max-width: 768px) {
     .news {
@@ -884,4 +879,29 @@ header.sticky .logo {
     .news {
         height: 50vh;
     }
+}
+
+
+.links {
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-decoration: none;
+
+}
+
+i {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+
+i:hover {
+    color: blue;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.footer-main {
+    height: 50vh;
+    width: 100%;
 }
