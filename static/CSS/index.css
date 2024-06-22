@@ -513,6 +513,10 @@ header.sticky .logo {
     font-size: 20px;
 }
 
+.prodname:hover {
+    text-decoration: underline;
+}
+
 .prev-price, .current-price {
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
