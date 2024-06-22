@@ -889,19 +889,19 @@ header.sticky .logo {
 
 }
 
-i {
+.links i {
     text-decoration: none;
     color: #000;
     transition: .3s;
 }
 
-i:hover {
+.links i:hover {
     color: blue;
     cursor: pointer;
     transform: translateY(-3px);
 }
 
 .footer-main {
-    height: 50vh;
+    /* height: 50vh; */
     width: 100%;
 }
