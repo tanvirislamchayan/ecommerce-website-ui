@@ -31,12 +31,54 @@
 
     <!-- Products -->
     <div class="container-fluid mt-3 ">
-        <div class="row">
+        <div class="row mb-5">
 
             <div class="col-lg-3 col-md-12 col-sm-12 aside">
                 <div class="w-100 aside-content">
+                    <p class="h1 m-4">Filter</p>
+                        
+                    <form action="#">
+                        <!-- Category -->
+                         <div class="row">
 
-                    <h1>Hello world</h1>
+                            <div class="category col-lg-6 col-md-12 col-sm-12 mt-2">
+                                <select class="form-select" aria-label=".form-select-lg example">
+                                    <option selected>Select Category</option>
+                                    <option value="shirt">Shirt</option>
+                                    <option value="pant">Pant</option>
+                                    <option value="t-shirt">T-shirt</option>
+                                    <option value="panjabi">Panjabi</option>
+                                    <option value="shue">Shue</option>
+                                </select>
+                            </div>
+    
+                            <!-- Gender -->
+                            <div class="gender col-lg-6 col-md-12 col-sm-12 mt-2">
+                                <select class="form-select" aria-label=".form-select-lg example">
+                                    <option selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="child">child</option>
+                                </select>
+                            </div>
+
+                         </div>
+                         <p class="h3 text-center mt-2">Price Range</p>
+
+                         <div class="d-flex mt-2 ">
+                            <!-- Price Range -->
+                            <div id="demo" style="padding: 5px 20px; width: 200px;" class="border rounded bg-light m-2">
+                                &#2547;<span id="output">00</span>
+                            </div>
+                            <div class="slidecontainer align-self-center ">
+                                <input type="range" min="100" max="1000" value="399" class="slider rounded" id="myRange">
+                            </div>
+                         </div>
+                        <!-- Submit -->
+                         <div class="text-end">
+                            <button class="filter-btn" type="submit">Filter</button>
+                         </div>
+                    </form>
 
                 </div>
             </div>
