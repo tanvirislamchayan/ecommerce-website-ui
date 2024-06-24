@@ -55,12 +55,3 @@ setInterval((() => {
     moveSlider('next')
 }), 10000)
 
-
-var range = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = range.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-range.oninput = function() {
-  output.innerHTML = this.value;
-}
