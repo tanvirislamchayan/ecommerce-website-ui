@@ -909,3 +909,122 @@ header.sticky .logo {
     /* height: 50vh; */
     width: 100%;
 }
+
+.blog-header {
+    background: url(../../Images/backimg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.blog-header div {
+    bottom: 10px;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+
+.blog-header div p {
+    color: rgb(0, 0, 0,.5);
+    font-size: 8em;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+
+.blog-header div span {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .blog-header div {
+        bottom: 10px;
+        left: 0%;
+        right: 0%;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+    }
+
+    .blog-header div p {
+        color: rgb(0, 0, 0,.5);
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+    }
+
+    .blog-header div span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .blog-header div {
+        bottom: 10px;
+        left: 0%;
+        right: 0%;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+    }
+
+    .blog-header div p {
+        color: rgb(0, 0, 0,.5);
+        font-size: 5em;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+    }
+
+    .blog-header div span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blog-header div {
+        bottom: 10px;
+        left: 0%;
+        right: 0%;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+    }
+
+    .blog-header div p {
+        color: rgb(0, 0, 0,.5);
+        font-size: 4em;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.blog-img-content {
+    position: relative;
+}
+
+.blog-img {
+    position: relative;
+}
+
+.blog-date {
+    color: rgba(107, 107, 107, 0.7);
+    font-size: 3em;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    background-color:rgba(255, 255, 255, 0.3) ;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.sec-img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
