@@ -89,6 +89,15 @@ header ul li a span:hover {
     color: #14ff72cb;
 }
 
+.sactive {
+    background-color: #000;
+    color: #fff;
+}
+
+.sactivebtn {
+    color: #000;
+}
+
 header ul li a .fa-solid {
     display: none;
     text-align: center;

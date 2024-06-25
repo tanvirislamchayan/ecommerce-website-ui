@@ -9,9 +9,9 @@ let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
 
 let slider = document.querySelector('.slider')
-let sliderList = document.querySelector('.slider .list')
+let sliderList = slider.querySelector('.slider .list')
 let thumbnail = document.querySelector('.slider .thumbnail')
-let thumbnailItems = document.querySelectorAll('.item')
+let thumbnailItems = thumbnail.querySelectorAll('.item')
 
 thumbnail.appendChild(thumbnailItems[0])
 
