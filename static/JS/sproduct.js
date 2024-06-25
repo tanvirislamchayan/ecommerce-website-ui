@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     for (let i = 0; i < smlImg.length; i++) {
         smlImg[i].addEventListener('click', function() {
+            var tmp = mainImg.src;
             mainImg.src = this.src;
+            this.src = tmp;
         });
     }
 });

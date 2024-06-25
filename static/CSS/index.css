@@ -1182,3 +1182,18 @@ header.sticky .logo {
     line-height: 25px;
     font-family: Poppins;
 }
+
+.blg-hd {
+    letter-spacing: 3px;
+}
+
+.blog-description {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.blg-full {
+    font-size: 20px;
+    line-height: 30px;
+}
