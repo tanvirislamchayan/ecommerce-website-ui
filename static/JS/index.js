@@ -9,9 +9,9 @@ let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
 
 let slider = document.querySelector('.slider')
-let sliderList = slider.querySelector('.slider .list')
+let sliderList = document.querySelector('.slider .list')
 let thumbnail = document.querySelector('.slider .thumbnail')
-let thumbnailItems = thumbnail.querySelectorAll('.item')
+let thumbnailItems = document.querySelectorAll('.item')
 
 thumbnail.appendChild(thumbnailItems[0])
 
@@ -54,4 +54,6 @@ function moveSlider(direction) {
 setInterval((() => {
     moveSlider('next')
 }), 10000)
+
+
 
