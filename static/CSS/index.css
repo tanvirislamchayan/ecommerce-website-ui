@@ -1197,3 +1197,13 @@ header.sticky .logo {
     font-size: 20px;
     line-height: 30px;
 }
+
+.api-icon i{
+    font-size: 2em;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.api-icon i:hover {
+    color: blue;
+}
