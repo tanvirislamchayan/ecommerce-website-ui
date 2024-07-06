@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Home</title>
     <link rel="stylesheet" href="../static/CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../static/CSS/bootstrap.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/CSS/bootstrap.css">
 </head>
 <body>
 
@@ -15,133 +15,137 @@
     <header>
         <a href="#" class="logo">MTAshop</a>
         <ul>
-            <li><a href="index.html"> <i class="fa-solid fa-house "></i><span > Home</span></a></li>
-            <li><a href="shop.html"> <i class="fa-solid fa-shop "></i><span> Shop</span></a></li>
-            <li><a href="blog.html"><i class="fa-solid fa-blog activebtn"></i><span class="active"> Blog</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-address-card"></i></i><span> About</span></a></li>
+            <li><a href="index.html"> <i class="fa-solid fa-house activebtn"></i><span class="active"> Home</span></a></li>
+            <li><a href="shop.html"> <i class="fa-solid fa-shop"></i><span> Shop</span></a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-blog"></i><span> Blog</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-address-card"></i><span> About</span></a></li>
             <li><a href="#"> <i class="fa-solid fa-cart-shopping"></i> <span> Cart</span></a></li>
-            <li><a href="#"> <i class="fa-solid fa-user"></i> <span> Login</span></a></li>
+            <li><a href="login_signup.html"> <i class="fa-solid fa-user"></i> <span> Login</span></a></li>
         </ul>
     </header>
 
 
-    <div class="container-fluid blog-header mb-5">
-        <div>
-            <p  >#readmore..</p>
+
+    <div class="container mx-auto" style="margin: 150px 0px 100px 0px; height: 100vh;"  id="login-form">
+        <div class="col-lg-4 p-4 mx-auto bg-light shadow-sm border rounded">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button type="submit" class="btn btn-primary ">Login</button>
+                </div>
+            </form>
+
+            <div class="col-lg-12 text-center mt-4">
+                <p>Don't have account? <span class="text-primary text-decoration-underline" style="cursor: pointer;" id="signup-btn">Signup Hare..</span></p>
+                <p>
+                    or login with...
+                </p>
+                <p class="api-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google"></i>
+                </p>
+                
+            </div>
         </div>
     </div>
 
-    <!-- Blog start -->
-
-    <div class="container">
-
-        <div class="shadow-sm rounded bg-light m-3 row">
-            <div class="col-lg-6 col-md-12 col-sm-12 blog-img-content h-100 p-2" data-aos="fade-up">
-                
-                <div class="blog-date">1/2/24</div>
-                <div class="blog-img">
-                    <img class="w-100 mx-auto mt-5 rounded blgMainImg"  src="../Images/img1.jpg" alt="">
-                    <div class="sec-img w-25">
-                        <img class="w-100 rounded border shadow-sm blgSmlImg" src="../Images/img2.jpg" alt="">
-                    </div>
+    <div class="container mx-auto d-none" style="margin: 150px 0px 100px 0px; height: 100vh;"  id="signup-form">
+        <div class="col-lg-6 p-4 mx-auto bg-light shadow-sm border rounded">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="first_name" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="first_name">
                 </div>
 
-            </div>
+                <div class="col-md-6">
+                  <label for="last_name" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="last_name">
+                </div>
 
-            <div class="col-lg-6 col-md-12 col-sm-12 h-100 p-2">
-                <p class="h2 mt-5 mb-2 blg-hd" data-aos="fade-up" data-aos-delay="100">Blog Heading</p>
-                <p class="blog-description" data-aos="fade-up" data-aos-delay="200">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat perferendis quae, minus obcaecati velit odio eaque nostrum nulla maxime voluptatem a numquam quasi cumque illum voluptate nemo itaque magnam quia sapiente ipsum reiciendis. Laudantium culpa sapiente excepturi odio, consectetur quis exercitationem commodi tempore? Officiis error veritatis dolorem enim corrupti.
-                </p>
-                <p data-aos="fade-up" data-aos-delay="300">
-                    <a href="sblog.html">
-                        Continue Reading...
-                    </a>
-                </p>
-            </div>
+                <div class="col-md-6">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="comfirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="gender" class="form-label">Gender</label>
+                  <select id="gender" class="form-select">
+                    <option selected>Choose...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-primary">Sign up</button>
+                </div>
+
+                <div class="col-lg-12 text-center">
+                    <p>Already have an account? <span class="text-primary text-decoration-underline" style="cursor: pointer;" id="login-btn">Login Hare..</span></p>
+                    <p>
+                        or login with...
+                    </p>
+                    <p class="api-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </p>
+                </div>
+              </form>
         </div>
+    </div>
 
-        <div class="shadow-sm rounded bg-light m-3 row">
-            <div class="col-lg-6 col-md-12 col-sm-12 blog-img-content h-100 p-2" data-aos="fade-up">
-                
-                <div class="blog-date">1/2/24</div>
-                <div class="blog-img">
-                    <img class="w-100 mx-auto mt-5 rounded blgMainImg"  src="../Images/img1.jpg" alt="">
-                    <div class="sec-img w-25">
-                        <img class="w-100 rounded border shadow-sm blgSmlImg" src="../Images/img2.jpg" alt="">
-                    </div>
+
+
+    <!-- newsletter -->
+
+    <div class="container-fluid w-100 mb-5 news">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-2">
+                <div class="w-100 d-flex flex-column heading">
+                    <h1>Sign up for newsletters....</h1>
+                    <p>Get E-mail updates about our latest shop and <span> special offers</span> </p>
                 </div>
-
             </div>
-
-            <div class="col-lg-6 col-md-12 col-sm-12 h-100 p-2">
-                <p class="h2 mt-5 mb-2 blg-hd" data-aos="fade-up" data-aos-delay="100">Blog Heading</p>
-                <p class="blog-description" data-aos="fade-up" data-aos-delay="200">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat perferendis quae, minus obcaecati velit odio eaque nostrum nulla maxime voluptatem a numquam quasi cumque illum voluptate nemo itaque magnam quia sapiente ipsum reiciendis. Laudantium culpa sapiente excepturi odio, consectetur quis exercitationem commodi tempore? Officiis error veritatis dolorem enim corrupti.
-                </p>
-                <p data-aos="fade-up" data-aos-delay="300">
-                    <a href="sblog.html">
-                        Continue Reading...
-                    </a>
-                </p>
-            </div>
-        </div>
-
-        <div class="shadow-sm rounded bg-light m-3 row">
-            <div class="col-lg-6 col-md-12 col-sm-12 blog-img-content h-100 p-2" data-aos="fade-up">
-                
-                <div class="blog-date">1/2/24</div>
-                <div class="blog-img">
-                    <img class="w-100 mx-auto mt-5 rounded blgMainImg"  src="../Images/img1.jpg" alt="">
-                    <div class="sec-img w-25">
-                        <img class="w-100 rounded border shadow-sm blgSmlImg" src="../Images/img2.jpg" alt="">
-                    </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 p-2 news-email mt-auto mb-auto text-center">
+                <div style="color: white;" class="w-100 shadow-sm">
+                    <input class="newsletter-email" placeholder="e.g.@gmail.com" type="email">
+                    <button class="">Sugn up</button>
                 </div>
-
-            </div>
-
-            <div class="col-lg-6 col-md-12 col-sm-12 h-100 p-2">
-                <p class="h2 mt-5 mb-2 blg-hd" data-aos="fade-up" data-aos-delay="100">Blog Heading</p>
-                <p class="blog-description" data-aos="fade-up" data-aos-delay="200">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat perferendis quae, minus obcaecati velit odio eaque nostrum nulla maxime voluptatem a numquam quasi cumque illum voluptate nemo itaque magnam quia sapiente ipsum reiciendis. Laudantium culpa sapiente excepturi odio, consectetur quis exercitationem commodi tempore? Officiis error veritatis dolorem enim corrupti.
-                </p>
-                <p data-aos="fade-up" data-aos-delay="300">
-                    <a href="sblog.html">
-                        Continue Reading...
-                    </a>
-                </p>
             </div>
         </div>
 
     </div>
+    <!-- end of newsletter -->
 
-    <!-- blog end -->
-
-
-
-
-            <!-- newsletter -->
-
-        <div class="container-fluid w-100 mb-5 news">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 p-2">
-                    <div class="w-100 d-flex flex-column heading">
-                        <h1>Sign up for newsletters....</h1>
-                        <p>Get E-mail updates about our latest shop and <span> special offers</span> </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 p-2 news-email mt-auto mb-auto text-center">
-                    <div style="color: white;" class="w-100 shadow-sm">
-                        <input class="newsletter-email" placeholder="e.g.@gmail.com" type="email">
-                        <button class="">Sugn up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of news letter -->
-
-            <!-- footer -->
-     <div class="footer-main container-fluid mt-5 row">
+    <!-- footer -->
+        <div class="footer-main container-fluid mt-5 row">
         <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column p-2">
             <div  class="w-75 mx-auto">
                 <p class="h1">MTAshop</p>
@@ -227,17 +231,32 @@
                 </div>
             </div>
         </div>
-     </div>
-     <!-- end of footer -->
-
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script src="../static/JS/bootstrap.js"></script>
-     <script src="../static/JS/index.js"></script>
-     <script src="../static/JS/sblog.js"></script>
-     <script>
+        </div>
+        <!-- end of footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../static/JS/bootstrap.js"></script>
+    <script src="../static/JS/index.js"></script>
+    <script>
         AOS.init();
     </script>
-</body>
 
+    <script>
+        var loginBtn = document.getElementById('login-btn');
+        var signUpBtn = document.getElementById('signup-btn')
+        var loginForm = document.getElementById('login-form')
+        var signupForm = document.getElementById('signup-form')
+
+        loginBtn.addEventListener('click', () => {
+            signupForm.classList.add('d-none')
+            loginForm.classList.remove('d-none')
+        });
+
+        signUpBtn.addEventListener('click', () => {
+            loginForm.classList.add('d-none')
+            signupForm.classList.remove('d-none')
+        });
+        
+    </script>
+</body>
 
 </html>
